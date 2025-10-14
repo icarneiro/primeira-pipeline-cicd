@@ -14,3 +14,6 @@ jobs:
       with:
         username: ${{ secrets.DOCKERHUB_USERNAME }}
         password: ${{ secrets.DOCKERHUB_TOKEN }}
+    - name: Image build
+      uses: docker/build-push-action@v6.18.0
+      
